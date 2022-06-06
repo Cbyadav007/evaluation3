@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchases</title>
+    <style>
+      #purchased_vouchers{
+          display:grid;
+          row-gap: 40px;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: auto;
+        
+      }
+      .box{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width:350px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Wallet balence id:- "wallet_balance" (only number). -->
+    <!-- - All the purchased voucher will be appended in div with id as "purchased_vouchers".
+  - The remaining balance will show on the page inside h3 tag with id as "balance" -->
+  <div id="wallet_balance"></div>
+  <h3 id="balance"> </h3>
+  <div id="purchased_vouchers">
+
+  </div>
+  </body>
+</html>
+<script src="/unit3_c2/scripts/purchase.js"></script>
