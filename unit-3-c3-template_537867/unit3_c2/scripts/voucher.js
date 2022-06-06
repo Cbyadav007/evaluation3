@@ -39,8 +39,7 @@ async function appendVoucher(data)
         buy.innerText = "Buy Voucher";
         buy.className = "buy_voucher";
         buy.addEventListener("click",function(){
-            compareFun(el.price,el.image,el.name);
-            
+            compareFun(el.price,el.image,el.name);  
         });
 
         vouchercard.append(image,name,price,buy);
@@ -51,7 +50,7 @@ async function appendVoucher(data)
     });
 }
 
-function compareFun(price,im,nm){
+ function compareFun(price,im,nm){
     // console.log(price);
    let getUser = JSON.parse(localStorage.getItem("user"));
 //    console.log(getUser[0].amount);
